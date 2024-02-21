@@ -1,2 +1,3 @@
-# exploring-sequence-databases
-Exploring sequence databases
+# Pharma_BioInfo
+
+Book repo for "Practical of Bioinformatics in Parmacy"

@@ -1,0 +1,119 @@
+---
+title: "Bioinformatics - Exploring sequence databases"
+author: "Dorine MERLAT - dorine.merlat@et.unistra.fr"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+ # bibliography: [book.bib, packages.bib]
+ # biblio-style: apalike
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# NCBI - Interrogation of databases by Entrez
+
+Go to <http://www.ncbi.nlm.nih.gov/>.
+
+## Use access number
+
+Select *Nucleotide* on the NCBI website and search for the sequence NC_045512. 
+
+> What is it? How long is the genome?
+
+> Consult the *How* field. Which bank does this sequence come from? Is it reliable? What sequencing technology was used? What can you say about this entry compared with the initial GenBank entry (1st sequence of the SARS-Cov-2 genome)?
+
+> Look for the coding region corresponding to the N protein (nucleocapsid phosphoprotein).
+
+> What do you think of the composition of this protein? What problems might such a sequence pose in a similarity search?
+
+> Display the genome sequence in fasta format. How does this format compare with the RefSeq format?
+
+## Search by annotation (*Filters/Advanced*)
+
+Search Nucleotide for sequences containing the BRCA1 gene for Homo sapiens, using filters or the advanced search.
+
+> Why are there several sequences in RefSeq? in Genbank?
+
+Among all the results, one of the sequences is a fragment of the gene in a breast cancer patient. To find it more easily, search for KT152889. in the search bar. 
+
+> Quickly position the annotated gene elements on a drawing. What is the position of the variation on the sequence? What does it correspond to?
+
+> Among the features, the sequence source provides a cross-reference to NCBI's Taxonomy bank. Follow this link.
+
+## Taxonomy bank
+
+> Which human subspecies are listed in the Taxonomy bank?
+
+> Which other organisms are listed in the Hominina 
+e ?
+
+> Which orders are closest to the primate order? Which has the most available proteins?
+
+> How many genomes are available in the Genome Bank for Animals, Fungi, Viridiplantae and Eukaryotes? Please comment.
+
+# Protein sequence search in UniProtKb 
+
+Select the UniprotKB bank www.uniprot.org.
+
+## Advanced search fields
+
+> How many human protein sequences are listed in UniprotKB? in SwissProt?
+
+> Search for the protein associated with the BRCA1 gene. Compare the results. Which is the best solution?
+
+## Example of a SwissProt entry
+
+Search for the MUC1_HUMAN protein
+
+> Has the existence of this protein been established (see Protein existence at the top of the page)?
+
+> Compare the default format, the text format and the fasta format (available in Download).
+
+> How many isoforms are described for this protein (see Sequences)? Align the isoforms and see how they differ. For that, click on *align isoforms$ and launch the alignment. 
+
+## Function - GO annotations
+
+> The Go ontology can be used to describe proteins in 3 ways. Which are they?
+
+
+> Follow the link to the entry "negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator".  What is it? What type of GO is it? How often is it used to describe proteins?
+
+> Are there any synonyms for the term GO?
+
+## Structure
+
+> What can you say about the structures obtained experimentally for the protein?
+
+> What can you say about the reliability of the AlphaFold prediction for this protein?
+
+## Tab *External links* (top of page)
+
+### Sequence databases
+
+> Why are there so many more links to EMBL/GenBank/DDBJ than to RefSeq?
+
+### Families and domains in INTERPRO database
+
+> Display the graphical representation (View protein in InterPro). How many distinct protein domains are there in this protein?
+
+Domain: *IPR000082 SEA domain* 
+
+> From which banks do the 3 signatures associated with this InterPro domain originate? 
+  
+You can get more information by passing the mouse over the colored bars, to open the domain in the associated bank, click on the corresponding link on the right. 
+
+> Follow the link to the associated PFAM signature. Display the signature (click on the *signature* tab).
+
+In a new tab, search for the BRCA1_HUMAN protein in InterProScan. 
+
+> How many distinct protein domains are there in this protein?
+
+> Follow the link to the PFAM signature associated with the *Zinc finger, C3HC4 type (RING finger)*.  Display the signature and compare it with the SEA domain of MUC1. 
+
+Look at the ProSite signature associated with the *Zinc finger RING-type signature*. Once on the Prosite page, open *View PS00518 in PROSITE patterns*. 
+
+> What's the main problem with the pattern?
